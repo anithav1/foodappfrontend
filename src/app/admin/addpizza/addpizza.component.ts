@@ -7,7 +7,8 @@ import { AdminService } from 'src/app/services/admin.service';
 @Component({
   selector: 'app-addpizza',
   templateUrl: './addpizza.component.html',
-  styleUrls: ['./addpizza.component.css']
+  styleUrls: ['./addpizza.component.css'],
+
 })
 export class AddpizzaComponent implements OnInit {
   msg: any = [];
@@ -54,7 +55,7 @@ export class AddpizzaComponent implements OnInit {
         this.adminService.avail = true;
         this.adminService.msg = "Successfully Added a food!!!"
         this.router.navigate(['/admin']);
-        // console.log(res)
+        console.log(res)
       }
       ,
       (error) => {
