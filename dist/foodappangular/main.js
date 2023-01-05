@@ -3444,13 +3444,13 @@ class CartService {
         this.headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().set('Content-Type', 'application/json');
     }
     addPizza(body) {
-        return this.http.post('https://foodapp-ztcs.onrender.com/addtocart', body, {
+        return this.http.post('./addtocart', body, {
             observe: 'body',
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().append('Content-Type', 'application/json')
         });
     }
     deletePizza(body) {
-        return this.http.post('https://foodapp-ztcs.onrender.com/deletefromcart', body, {
+        return this.http.post('./deletefromcart', body, {
             observe: 'body',
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().append('Content-Type', 'application/json')
         });
@@ -3566,7 +3566,7 @@ class EditpizzaComponent {
             // console.log("yes image");
             formData.append('file', this.image);
             // *************
-            this.http.post('https://foodapp-ztcs.onrender.com/admin/editpizzawithimage', formData).subscribe((res) => {
+            this.http.post('./admin/editpizzawithimage', formData).subscribe((res) => {
                 this.adminService.avail = true;
                 this.adminService.msg = "Successfully Edited a pizza!!!";
                 this.router.navigate(['/admin']);
@@ -3579,7 +3579,7 @@ class EditpizzaComponent {
             });
         }
         else {
-            this.http.get('https://foodapp-ztcs.onrender.com/admin/editpizzawithoutimage?id=' + this.id + '&pizzaname=' + this.pn + '&pizzasize=' + this.ps + '&pizzaprice=' + this.pp).subscribe((res) => {
+            this.http.get('./admin/editpizzawithoutimage?id=' + this.id + '&pizzaname=' + this.pn + '&pizzasize=' + this.ps + '&pizzaprice=' + this.pp).subscribe((res) => {
                 this.adminService.avail = true;
                 this.adminService.msg = "Successfully Edited a pizza!!!";
                 this.router.navigate(['/admin']);
@@ -4067,7 +4067,7 @@ class AuthService {
         return this.http.get(this.baseUri + "/check", { headers: this.headers });
     }
     register(body) {
-        return this.http.post('https://foodapp-ztcs.onrender.com/register', body, {
+        return this.http.post('./register', body, {
             observe: 'body',
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().append('Content-Type', 'application/json')
         });
@@ -4076,13 +4076,13 @@ class AuthService {
         return this.http.get(this.baseUri + "/read", { headers: this.headers });
     }
     reset(body) {
-        return this.http.post('https://foodapp-ztcs.onrender.com/reset', body, {
+        return this.http.post('./reset', body, {
             observe: 'body',
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().append('Content-Type', 'application/json')
         });
     }
     resetpassworddone(body) {
-        return this.http.put('https://foodapp-ztcs.onrender.com/forgot-password-done', body, {
+        return this.http.put('./forgot-password-done', body, {
             observe: 'body',
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().append('Content-Type', 'application/json')
         });
@@ -4091,7 +4091,7 @@ class AuthService {
         return this.http.get(this.baseUri + "/otp", { headers: this.headers });
     }
     login(body) {
-        return this.http.post('https://foodapp-ztcs.onrender.com/login', body, {
+        return this.http.post('./login', body, {
             observe: 'body',
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().append('Content-Type', 'application/json')
         });
@@ -4117,13 +4117,13 @@ class AuthService {
         return this.http.get(this.baseUri + "/editprofile?id=" + id + "&name=" + name + "&email=" + email + "&contact=" + contact, { headers: this.headers });
     }
     changepassword(body) {
-        return this.http.post('https://foodapp-ztcs.onrender.com/changepassword', body, {
+        return this.http.post('./changepassword', body, {
             observe: 'body',
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().append('Content-Type', 'application/json')
         });
     }
     sendfeedback(body) {
-        return this.http.post('https://foodapp-ztcs.onrender.com/sendfeedback', body, {
+        return this.http.post('./sendfeedback', body, {
             observe: 'body',
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpHeaders"]().append('Content-Type', 'application/json')
         });
