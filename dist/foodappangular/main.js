@@ -1707,6 +1707,7 @@ class AddpizzaComponent {
     onSubmit(f) {
         if (!f.valid) {
             this.msg = "something went  wrong!!";
+            this.baseUri = "https://foodapp-ztcs.onrender.com";
             this.avail = true;
             return;
         }
