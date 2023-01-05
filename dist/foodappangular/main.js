@@ -1707,7 +1707,6 @@ class AddpizzaComponent {
     onSubmit(f) {
         if (!f.valid) {
             this.msg = "something went  wrong!!";
-            this.baseUri = "https://foodapp-ztcs.onrender.com";
             this.avail = true;
             return;
         }
@@ -3570,7 +3569,7 @@ class EditpizzaComponent {
             this.http.post('https://foodapp-ztcs.onrender.com/admin/editpizzawithimage', formData).subscribe((res) => {
                 this.adminService.avail = true;
                 this.adminService.msg = "Successfully Edited a pizza!!!";
-                this.router.navigate(['https://foodapp-ztcs.onrender.com/admin']);
+                this.router.navigate(['/admin']);
                 console.log(res);
             }, (error) => {
                 if (error instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpErrorResponse"]) {
