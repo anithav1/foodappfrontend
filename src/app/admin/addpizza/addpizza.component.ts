@@ -53,7 +53,7 @@ export class AddpizzaComponent implements OnInit {
       (res) => {
         this.adminService.avail = true;
         this.adminService.msg = "Successfully Added a food!!!"
-        this.router.navigate(['/admin']);
+        this.router.navigate(['https://foodapp-ztcs.onrender.com/admin']);
         // console.log(res)
       }
       ,
