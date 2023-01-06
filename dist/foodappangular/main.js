@@ -1720,7 +1720,7 @@ class AddpizzaComponent {
             this.adminService.avail = true;
             this.adminService.msg = "Successfully Added a food!!!";
             this.router.navigate(['/admin']);
-            // console.log(res)
+            console.log(res)
         }, (error) => {
             if (error instanceof _angular_common_http__WEBPACK_IMPORTED_MODULE_0__["HttpErrorResponse"]) {
                 this.router.navigate(['/login']);
@@ -2561,6 +2561,7 @@ class ViewpizzaComponent {
     constructor(router, adminService) {
         this.router = router;
         this.adminService = adminService;
+        this.baseUri = "https://foodapp-ztcs.onrender.com";
     }
     ngOnInit() {
         this.check();
