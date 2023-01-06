@@ -1708,6 +1708,7 @@ class AddpizzaComponent {
         if (!f.valid) {
             this.msg = "something went  wrong!!";
             this.avail = true;
+            this.baseUri = "https://foodapp-ztcs.onrender.com";
             return;
         }
         const formData = new FormData();
@@ -1715,7 +1716,7 @@ class AddpizzaComponent {
         formData.append('pizzaname', f.controls.pizzaname.value);
         formData.append('pizzasize', f.controls.pizzasize.value);
         formData.append('pizzaprice', f.controls.pizzaprice.value);
-        this.http.post('https://foodapp-ztcs.onrender.com/admin/addpizza', formData).subscribe((res) => {
+        this.http.post('/admin/addpizza', formData).subscribe((res) => {
             this.adminService.avail = true;
             this.adminService.msg = "Successfully Added a food!!!";
             this.router.navigate(['/admin']);
