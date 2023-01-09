@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\HP\OneDrive\Desktop\frontend\src\styles.css */"OmL/");
+__webpack_require__(/*! C:\Users\HP\OneDrive\Desktop\frontend\dist\foodappangular\styles.js */"OmL/");
 __webpack_require__(/*! C:\Users\HP\OneDrive\Desktop\frontend\node_modules\ngx-toastr\toastr.css */"G9EY");
 module.exports = __webpack_require__(/*! C:\Users\HP\OneDrive\Desktop\frontend\node_modules\aos\dist\aos.css */"6Cl6");
 

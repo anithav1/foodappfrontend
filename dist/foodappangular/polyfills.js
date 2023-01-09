@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\HP\OneDrive\Desktop\frontend\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! C:\Users\HP\OneDrive\Desktop\frontend\dist\foodappangular\polyfills.js */"hN/g");
 
 
 /***/ }),

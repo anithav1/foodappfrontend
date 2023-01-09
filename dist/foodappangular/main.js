@@ -81,8 +81,7 @@ EmptycartComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\HP\OneDrive\Desktop\frontend\src\main.ts */"zUnb");
-
+module.exports = __webpack_require__(/*! C:\Users\HP\OneDrive\Desktop\frontend\dist\foodappangular\main.js */"zUnb");
 
 /***/ }),
 
