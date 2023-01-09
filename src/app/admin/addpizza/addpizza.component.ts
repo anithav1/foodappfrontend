@@ -74,6 +74,7 @@ export class AddpizzaComponent implements OnInit {
     if (event.target.files.length > 0) {
       const file = event.target.files[0];
       this.image = file;
+      console.log(file);
     }
   }
 }

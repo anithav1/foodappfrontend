@@ -22,7 +22,7 @@ import * as $ from 'jquery';
 
 
 export class AppComponent{
-  title = 'foodappangular';
+  title = 'frontend';
 
   constructor(private loggerService: LoggerService){
   this.loggerService.log("Hello world");
